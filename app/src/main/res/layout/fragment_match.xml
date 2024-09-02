@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/homeCrest2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blank_crest" />
+
+        <ImageView
+            android:id="@+id/awayCrest2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/blank_crest" />
+
+        <TextView
+            android:id="@+id/homeTeam2"
+            android:visibility="invisible"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="32dp"
+            android:gravity="center"
+            android:text="Home Team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeCrest2" />
+
+        <TextView
+            android:id="@+id/awayTeam2"
+            android:visibility="invisible"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Away Team"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/awayCrest2" />
+
+        <TextView
+            android:id="@+id/homeScore2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="13dp"
+            android:text="0"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/separator"
+            app:layout_constraintStart_toEndOf="@+id/homeCrest2"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/awayScore2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="43dp"
+            android:text="0"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/awayCrest2"
+            app:layout_constraintStart_toEndOf="@+id/separator"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/separator"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="15dp"
+            android:text="-"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/awayScore2"
+            app:layout_constraintStart_toEndOf="@+id/homeScore2"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginEnd="51dp"
+            android:text="Date"
+            app:layout_constraintEnd_toStartOf="@+id/awayCrest2"
+            app:layout_constraintStart_toEndOf="@+id/homeCrest2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="49dp"
+            android:text="venue"
+            app:layout_constraintEnd_toStartOf="@+id/awayCrest2"
+            app:layout_constraintStart_toEndOf="@+id/homeCrest2"
+            app:layout_constraintTop_toBottomOf="@+id/date2" />
+
+        <TextView
+            android:id="@+id/matchStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="38dp"
+            android:text="status"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/awayCrest2"
+            app:layout_constraintStart_toEndOf="@+id/homeCrest2"
+            app:layout_constraintTop_toBottomOf="@+id/halfTimeScore" />
+
+        <TextView
+            android:id="@+id/status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/halfTimeScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="40dp"
+            android:text="(0 - 0)"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/matchStatus2"
+            app:layout_constraintEnd_toStartOf="@+id/awayTeam2"
+            app:layout_constraintStart_toEndOf="@+id/homeTeam2"
+            app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

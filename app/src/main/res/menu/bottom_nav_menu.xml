@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Games"
+        android:icon="@drawable/games"
+        android:id="@+id/games"/>
+    <item android:title="Results"
+        android:icon="@drawable/results"
+        android:id="@+id/results"/>
+    <item android:title="Table"
+        android:icon="@drawable/table"
+        android:id="@+id/table"/>
+</menu>
